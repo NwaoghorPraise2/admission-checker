@@ -16,7 +16,7 @@ form.addEventListener('submit', (e)=> {
     localStorage.setItem("jamb", jambNumber);    
     jambReg = localStorage.getItem("jamb");
 
-    const regex = /^[0-9]{12}[A-Za-z]{2}$/
+    const regex = /^[0-9]{12}[A-Za-z]{0,3}$/
 
     if (regex.test(jambReg)){
       loadList();
