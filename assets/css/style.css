@@ -54,6 +54,7 @@
   }
   .box-root {
       box-sizing: border-box;
+      align-items: center;
   }
   .flex-direction--column {
       -ms-flex-direction: column;
