@@ -27,9 +27,9 @@
   }
 
   .logo{
-    width: 70px;
+    width: 80px;
     padding: 0;
-    margin-left: 135px;
+    /* margin-left: 135px; */
     align-items: center;
   }
   .loginbackground {
