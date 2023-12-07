@@ -57,7 +57,7 @@ const loadList = () => {
         } else {
             let name = obj.NAME;
         let course = obj.COURSE;
-        let status = obj.AD_STATUS; 
+        let status = obj.FACULTY; 
       console.log(name, course, status);
 
       modalBox.innerHTML = `
