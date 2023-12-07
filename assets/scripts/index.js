@@ -11,15 +11,25 @@ form.addEventListener('submit', (e)=> {
     e.preventDefault();
     const jambNumber = document.getElementById("jambNumber").value;
     console.log(jambNumber);
-    
-    localStorage.setItem("jamb", jambNumber);
-    
+     
+
+    localStorage.setItem("jamb", jambNumber);    
     jambReg = localStorage.getItem("jamb");
 
-    loadList();
-    
-});
+    const regex = /^[0-9]{12}[A-Za-z]{2}$/
 
+    if (regex.test(jambReg)){
+      loadList();
+     } else {
+      modalBox.innerHTML = `
+      <i class="fa-solid fa-ban" style="color:red;"></i>
+      <h3>Invalid Input!!! Please, enter your correct JAMB reg. Number.<span id="name"></span></h3>
+      <div class="buttons">
+        <button class="close-btn" onclick="hello()">Ok, Close</button>
+      </div>
+      `;
+     }
+});
 
 
 const loadList = () => {
