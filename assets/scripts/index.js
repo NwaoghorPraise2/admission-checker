@@ -10,7 +10,7 @@ let jambReg;
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
     const jambNumber = document.getElementById("jambNumber").value;
-    console.log(jambNumber);
+    // console.log(jambNumber);
      
 
     localStorage.setItem("jamb", jambNumber);    
@@ -58,7 +58,7 @@ const loadList = () => {
             let name = obj.NAME;
         let course = obj.COURSE;
         let status = obj.FACULTY; 
-      console.log(name, course, status);
+      // console.log(name, course, status);
 
       modalBox.innerHTML = `
       <i class="fa-regular fa-circle-check"></i>
