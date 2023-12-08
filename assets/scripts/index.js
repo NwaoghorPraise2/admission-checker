@@ -33,7 +33,7 @@ form.addEventListener('submit', (e)=> {
 
 
 const loadList = () => {
-    const sheetID = "1-sF5khew1bbYdPcvJ8nHebH5y529Vy_kG51_eyYQ3i0";
+    const sheetID = "1jAfAgAk2B2hUK3LZkVJOa9HstsVE4Uv7TIGpYhXMbHQ";
     const sheetName = encodeURIComponent("list");
     const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 
